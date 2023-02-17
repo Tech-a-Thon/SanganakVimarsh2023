@@ -26,18 +26,17 @@
 </head>
 
 <body>
-<front>
-  <nav class="navbar px-4-lg mx-0 navbar-expand-lg navbar-dark shadow-5-strong">
-    <div class="container-fluid">
+  <nav class="navbar fixed-top px-4-lg mx-0 navbar-expand-lg navbar-dark shadow-5-strong fixed-top">
+    <div class="container-fluid justify-content-end">
       <!-- <a class="navbar-brand" href="#">
-          <img src="./imgs/logo.png" alt="Logo" class="logo img-fluid">
-        </a> -->
+          <img src="./imgs/logo.png" alt="Logo" class="logo-nav img-fluid">
+      </a> -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto my-2 mb-lg-0">
+        <ul class="navbar-nav mx-auto my-2 pb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
           </li>
@@ -57,15 +56,15 @@
             <a class="nav-link" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Archives</a>
+            <a class="nav-link" href="https://techathon-arsd.netlify.app/archive/sv22/" target="_blank">Archives</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  
+
   <main>
-    <section id="home">
+    <section id="home" class="scrollFade">
       <div class="px-4 text-center" style="z-index: 100">
         <div>
           <img src="./imgs/logo.png" alt="Logo" class="logo img-fluid">
@@ -109,7 +108,7 @@
         <div class="container py-4">
           <div class="row justify-content-center">
             <div class="col-lg-4 scrollFade">
-              <div class="card event  card-block mx-auto text-dark justify-content-center" data-bs-toggle="modal"
+              <div class="card event card-block mx-auto text-dark justify-content-center" data-bs-toggle="modal"
                 data-bs-target="#modal-1">
                 <i class="fa-regular fa-4x fa-lightbulb mb-3"></i> techTrivia
               </div>
@@ -764,8 +763,9 @@
     </a>
     <div class="text-center last-line py-4">
       <small>
-        Made with love by Tech-a-thon ARSD</div>
-      </small> 
+        Made with love by Tech-a-thon ARSD
+    </div>
+    </small>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
