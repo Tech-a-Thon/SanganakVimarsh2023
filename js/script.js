@@ -23,9 +23,9 @@ function scrollFade() {
     var element = fadeElements[index];
     var rect = element.getBoundingClientRect();
 
-    var elementFourth = rect.height/4;
+    var elementFourth = rect.height / 4;
     var fadeInPoint = window.innerHeight - elementFourth;
-    var fadeOutPoint = -(rect.height/4);
+    var fadeOutPoint = -(rect.height / 4);
 
     if (rect.top <= fadeInPoint) {
       element.classList.add('scrollFade--visible');
@@ -45,6 +45,28 @@ function scrollFade() {
 
 document.addEventListener('scroll', scrollFade);
 window.addEventListener('resize', scrollFade);
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   scrollFade();
 });
+
+const btnScrollToTop = document.querySelector('#btn-back-to-top');
+
+btnScrollToTop.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  })
+});
+
+window.onscroll = function()
+{
+    var pageOffset = document.documentElement.scrollTop || document.body.scrollTop;
+    if(pageOffset >= 1000)
+    {
+        document.getElementById('btn-back-to-top').style.visibility="visible"
+    }else
+    {
+        document.getElementById('btn-back-to-top').style.visibility="hidden";
+    }
+};
