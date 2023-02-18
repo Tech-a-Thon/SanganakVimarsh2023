@@ -1,12 +1,388 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
-    
+<body class="d-flex align-items-center justify-content-center h-100vh pt-5">
+    <form>
+        <fieldset class="border border-1 p-4">
+            <legend class="col-sm-auto">Captain Details</legend>
+            <div class="form-group row">
+                <label for="captain_name" class="col-4 col-form-label">Captain Name</label>
+                <div class="col-8">
+                    <input id="captain_name" name="captain_name" placeholder="Captain Name" type="text"
+                        required="required" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="college_name" class="col-4 col-form-label">College Name</label>
+                <div class="col-8">
+                    <input id="college_name" name="college_name" placeholder="College Name " type="text"
+                        class="form-control" required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="couse_name" class="col-4 col-form-label">Course Name</label>
+                <div class="col-8">
+                    <input id="couse_name" name="couse_name" placeholder="Course Name" type="text" class="form-control"
+                        required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="team_name" class="col-4 col-form-label">Team Name</label>
+                <div class="col-8">
+                    <input id="team_name" name="team_name" placeholder="Team Name" type="text" class="form-control"
+                        required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="email" class="col-4 col-form-label">Email ID</label>
+                <div class="col-8">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fa fa-mail-reply-all"></i>
+                            </div>
+                        </div>
+                        <input id="email" name="email" placeholder="Email ID" type="email" required="required"
+                            class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="w_num" class="col-4 col-form-label">WhatsApp Number</label>
+                <div class="col-8">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                        </div>
+                        <input id="w_num" name="w_num" placeholder="WhatsApp Number" type="text" class="form-control" title="Please enter exactly 10 digits" pattern="[1-9]{1}[0-9]{9}">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="discord_id" class="col-4 col-form-label">Discord ID with #</label>
+                <div class="col-8">
+                    <input id="discord_id" name="discord_id" placeholder="Discord ID with #" type="text"
+                        class="form-control" required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="valo_id" class="col-4 col-form-label">Valorant ID with #</label>
+                <div class="col-8">
+                    <input id="valo_id" name="valo_id" placeholder="Valorant ID with #" type="text" class="form-control"
+                        required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="peak_valo_rank" class="col-4 col-form-label">Peak Valorant Rank</label>
+                <div class="col-8">
+                    <input id="peak_valo_rank" name="peak_valo_rank" placeholder="Peak Valorant Rank " type="text"
+                        class="form-control" required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="id_ss" class="col-4 col-form-label">Screenshot of College ID</label>
+                <div class="col-8">
+                    <input id="id_ss" name="id_ss" placeholder="Screenshot of College ID" type="file"
+                        class="form-control" required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="offset-4 col-8">
+                    <button name="submit" id = "add-btn" type="button" class="btn btn-primary">Add Player</button>
+                </div>
+            </div>
+        </fieldset>
+        
+        <fieldset class="border border-1 p-4">
+            <legend class="col-sm-auto">Member 2 Details</legend>
+            <div class="form-group row">
+                <label for="member2_name" class="col-4 col-form-label">Member 2 Name</label>
+                <div class="col-8">
+                    <input id="member2_name" name="member2_name" placeholder="Member 2 Name" type="text"
+                        required="required" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="college_name" class="col-4 col-form-label">College Name</label>
+                <div class="col-8">
+                    <input id="college_name" name="college_name" placeholder="College Name " type="text"
+                        class="form-control" required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="couse_name" class="col-4 col-form-label">Course Name</label>
+                <div class="col-8">
+                    <input id="couse_name" name="couse_name" placeholder="Course Name" type="text" class="form-control"
+                        required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="team_name" class="col-4 col-form-label">Team Name</label>
+                <div class="col-8">
+                    <input id="team_name" name="team_name" placeholder="Team Name" type="text" class="form-control"
+                        required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="email" class="col-4 col-form-label">Email ID</label>
+                <div class="col-8">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fa fa-mail-reply-all"></i>
+                            </div>
+                        </div>
+                        <input id="email" name="email" placeholder="Email ID" type="email" required="required"
+                            class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="w_num" class="col-4 col-form-label">WhatsApp Number</label>
+                <div class="col-8">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                        </div>
+                        <input id="w_num" name="w_num" placeholder="WhatsApp Number" type="text" class="form-control" title="Please enter exactly 10 digits" pattern="[1-9]{1}[0-9]{9}">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="discord_id" class="col-4 col-form-label">Discord ID with #</label>
+                <div class="col-8">
+                    <input id="discord_id" name="discord_id" placeholder="Discord ID with #" type="text"
+                        class="form-control" required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="valo_id" class="col-4 col-form-label">Valorant ID with #</label>
+                <div class="col-8">
+                    <input id="valo_id" name="valo_id" placeholder="Valorant ID with #" type="text" class="form-control"
+                        required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="peak_valo_rank" class="col-4 col-form-label">Peak Valorant Rank</label>
+                <div class="col-8">
+                    <input id="peak_valo_rank" name="peak_valo_rank" placeholder="Peak Valorant Rank " type="text"
+                        class="form-control" required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="id_ss" class="col-4 col-form-label">Screenshot of College ID</label>
+                <div class="col-8">
+                    <input id="id_ss" name="id_ss" placeholder="Screenshot of College ID" type="file"
+                        class="form-control" required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="offset-4 col-8">
+                    <button name="submit" id = "add-btn" type="button" class="btn btn-primary">Add Player</button>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="border border-1 p-4">
+            <legend class="col-sm-auto">Member 3 Details</legend>
+            <div class="form-group row">
+                <label for="member3_name" class="col-4 col-form-label">Member 3 Name</label>
+                <div class="col-8">
+                    <input id="member3_name" name="member3_name" placeholder="Member 3 Name" type="text"
+                        required="required" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="college_name" class="col-4 col-form-label">College Name</label>
+                <div class="col-8">
+                    <input id="college_name" name="college_name" placeholder="College Name " type="text"
+                        class="form-control" required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="couse_name" class="col-4 col-form-label">Course Name</label>
+                <div class="col-8">
+                    <input id="couse_name" name="couse_name" placeholder="Course Name" type="text" class="form-control"
+                        required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="team_name" class="col-4 col-form-label">Team Name</label>
+                <div class="col-8">
+                    <input id="team_name" name="team_name" placeholder="Team Name" type="text" class="form-control"
+                        required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="email" class="col-4 col-form-label">Email ID</label>
+                <div class="col-8">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fa fa-mail-reply-all"></i>
+                            </div>
+                        </div>
+                        <input id="email" name="email" placeholder="Email ID" type="email" required="required"
+                            class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="w_num" class="col-4 col-form-label">WhatsApp Number</label>
+                <div class="col-8">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                        </div>
+                        <input id="w_num" name="w_num" placeholder="WhatsApp Number" type="text" class="form-control" title="Please enter exactly 10 digits" pattern="[1-9]{1}[0-9]{9}">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="discord_id" class="col-4 col-form-label">Discord ID with #</label>
+                <div class="col-8">
+                    <input id="discord_id" name="discord_id" placeholder="Discord ID with #" type="text"
+                        class="form-control" required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="valo_id" class="col-4 col-form-label">Valorant ID with #</label>
+                <div class="col-8">
+                    <input id="valo_id" name="valo_id" placeholder="Valorant ID with #" type="text" class="form-control"
+                        required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="peak_valo_rank" class="col-4 col-form-label">Peak Valorant Rank</label>
+                <div class="col-8">
+                    <input id="peak_valo_rank" name="peak_valo_rank" placeholder="Peak Valorant Rank " type="text"
+                        class="form-control" required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="id_ss" class="col-4 col-form-label">Screenshot of College ID</label>
+                <div class="col-8">
+                    <input id="id_ss" name="id_ss" placeholder="Screenshot of College ID" type="file"
+                        class="form-control" required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="offset-4 col-8">
+                    <button name="submit" id = "add-btn" type="button" class="btn btn-primary">Add Player</button>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="border border-1 p-4">
+            <legend class="col-sm-auto">Member 4 Details</legend>
+            <div class="form-group row">
+                <label for="member4_name" class="col-4 col-form-label">Member 4 Name</label>
+                <div class="col-8">
+                    <input id="member4_name" name="member4_name" placeholder="Member 4 Name" type="text"
+                        required="required" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="college_name" class="col-4 col-form-label">College Name</label>
+                <div class="col-8">
+                    <input id="college_name" name="college_name" placeholder="College Name " type="text"
+                        class="form-control" required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="couse_name" class="col-4 col-form-label">Course Name</label>
+                <div class="col-8">
+                    <input id="couse_name" name="couse_name" placeholder="Course Name" type="text" class="form-control"
+                        required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="team_name" class="col-4 col-form-label">Team Name</label>
+                <div class="col-8">
+                    <input id="team_name" name="team_name" placeholder="Team Name" type="text" class="form-control"
+                        required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="email" class="col-4 col-form-label">Email ID</label>
+                <div class="col-8">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fa fa-mail-reply-all"></i>
+                            </div>
+                        </div>
+                        <input id="email" name="email" placeholder="Email ID" type="email" required="required"
+                            class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="w_num" class="col-4 col-form-label">WhatsApp Number</label>
+                <div class="col-8">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                        </div>
+                        <input id="w_num" name="w_num" placeholder="WhatsApp Number" type="text" class="form-control" title="Please enter exactly 10 digits" pattern="[1-9]{1}[0-9]{9}">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="discord_id" class="col-4 col-form-label">Discord ID with #</label>
+                <div class="col-8">
+                    <input id="discord_id" name="discord_id" placeholder="Discord ID with #" type="text"
+                        class="form-control" required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="valo_id" class="col-4 col-form-label">Valorant ID with #</label>
+                <div class="col-8">
+                    <input id="valo_id" name="valo_id" placeholder="Valorant ID with #" type="text" class="form-control"
+                        required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="peak_valo_rank" class="col-4 col-form-label">Peak Valorant Rank</label>
+                <div class="col-8">
+                    <input id="peak_valo_rank" name="peak_valo_rank" placeholder="Peak Valorant Rank " type="text"
+                        class="form-control" required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="id_ss" class="col-4 col-form-label">Screenshot of College ID</label>
+                <div class="col-8">
+                    <input id="id_ss" name="id_ss" placeholder="Screenshot of College ID" type="file"
+                        class="form-control" required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="offset-4 col-8">
+                    <button name="submit" id = "add-btn" type="button" class="btn btn-primary">Add Player</button>
+                </div>
+            </div>
+        </fieldset>
+
+
+        </fieldset>
+    </form>
 </body>
+<script src="script.js"></script>
 </html>
