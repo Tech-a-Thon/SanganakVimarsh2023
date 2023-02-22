@@ -49,6 +49,37 @@ document.addEventListener('DOMContentLoaded', function () {
   scrollFade();
 });
 
+// only fade in
+var fadeInElements = document.getElementsByClassName('scrollFadeIn');
+
+function scrollFadeIn() {
+  var viewportBottom = window.scrollY + window.innerHeight;
+
+  for (var index = 0; index < fadeInElements.length; index++) {
+    var element = fadeInElements[index];
+    var rect = element.getBoundingClientRect();
+
+    var elementFourth = rect.height / 4;
+    var fadeInPoint = window.innerHeight - elementFourth;
+
+    if (rect.top <= fadeInPoint) {
+      element.classList.add('scrollFade--visible');
+      element.classList.add('scrollFade--animate');
+      element.classList.remove('scrollFade--hidden');
+    } else {
+      element.classList.remove('scrollFade--visible');
+      element.classList.add('scrollFade--hidden');
+    }
+  }
+}
+
+document.addEventListener('scroll', scrollFadeIn);
+window.addEventListener('resize', scrollFadeIn);
+document.addEventListener('DOMContentLoaded', function () {
+  scrollFadeIn();
+});
+
+
 const btnScrollToTop = document.querySelector('#btn-back-to-top');
 
 btnScrollToTop.addEventListener("click", function () {
