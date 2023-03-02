@@ -26,7 +26,7 @@
 </head>
 
 <body>
-  <nav class="navbar fixed-top px-4-lg mx-0 navbar-expand-lg navbar-dark shadow-5-strong fixed-top">
+  <nav class="navbar px-4-lg mx-0 navbar-expand-lg navbar-dark shadow-5-strong">
     <div class="container-fluid justify-content-end">
       <!-- <a class="navbar-brand" href="#">
           <img src="./imgs/logo.png" alt="Logo" class="logo-nav img-fluid">
@@ -39,6 +39,9 @@
         <ul class="navbar-nav mx-auto my-2 pb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery-carousel">Gallery</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#events">Events</a>
@@ -64,7 +67,7 @@
   </nav>
 
   <main>
-    <section id="home" class="scrollFade">
+    <section id="home" class="scrollFadeHome mb-4">
       <div class="px-4 text-center" style="z-index: 100">
         <div>
           <img src="./imgs/logo.png" alt="Logo" class="logo img-fluid">
@@ -86,18 +89,101 @@
       </div>
       <div id="particles-js"></div>
     </section>
+
+    <section id="aboutEvent">
+      <div class="px-4 py-3 my-3 mt-5 text-center">
+        <h2 class="fw-bold scrollFade mb-2">About The Event</h2>
+        <div class="col-lg-8 mx-auto">
+          <p class="lead mb-4 scrollFadeHome">
+            <small>
+              “Sanganak Vimarsh” is the annual fest organized by Tech-A-Thon, the CS society of ARSD. As the name
+              suggests, the fest aims to bring like-minded tech enthusiasts together to collaborate, build and compete
+              in various events, held throughout the usual two or three-day duration of the fest. The events hosted,
+              range
+              from intense competitions such as quizzes, hackathons and coding tournaments; to fun-centered relaxing
+              events such as gaming tournaments, treasure hunts and informative laid-back speaker sessions.
+            </small>
+          </p>
+
+          <p class="lead mb-4 scrollFadeHome">
+            <small>
+              Students from multiple colleges and universities actively take part in the events to showcase their
+              skills, all while solving practical problems and learning new things. They form teams and connect with
+              students from different backgrounds, making Tech-A-Thon an inter-college community. The community members
+              help each other out in their coding ventures, openly discussing their ideas and preferences.
+            </small>
+          </p>
+
+          <p class="lead mb-4 scrollFadeHome">
+            <small>
+              Overall, the fest is a rollercoaster of games and challenges to all the participants on board!
+            </small>
+          </p>
+        </div>
+        <p class="lead mb-4 scrollFadeHome">
+          <small>
+            <b>Dates of SV'23: 22-23 March 2023</b>
+          </small>
+        </p>
+      </div>
+    </section>
+
+    <section id="gallery-carousel">
+      <div class="container py-4 my-3 text-center">
+        <h2 class="fw-bold scrollFadeIn">GLIMPSES of SV</h2>
+        <div class="px-4 py-3 my-1 text-center">
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./imgs/event1.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/event2.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/event3.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/event4.JPG" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="about">
       <div class="px-4 py-3 my-3 text-center">
-        <h2 class="fw-bold scrollFade">About</h2>
-        <div class="col-lg-8 mx-auto scrollFade">
+        <h2 class="fw-bold scrollFadeHome">Tech-A-Thon</h2>
+        <h3 class="scrollFadeHome mb-2">The CS Society of ARSD</h3>
+        <div class="col-lg-8 mx-auto scrollFadeHome">
           <p class="lead mb-4">
-            Tech-a-thon, the Computer Science society of Atma Ram Sanatan Dharma College, University of Delhi, brings
-            to you its annual technical fest, Sanganak Vimarsh. The event is a platform for students to showcase their
-            technical skills and showcase their creativity. The events are open to students of all educational
-            institutions.
+            <small>
+              Tech-A-Thon, the Computer Science society of Atma Ram Sanatan Dharma College, University of Delhi, is a
+              fraternity of geeks set out to make the ever-evolving world of Information Technology more enjoyable, and
+              understandable for everyone. The society strives to extend beyond the conventional domains through a
+              series
+              of multi-disciplinary events and it works on different projects and initiatives throughout the year.
+            </small>
           </p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          </div>
+          <p class="lead mb-4">
+            <small>
+              Brushing up your technophile talents, Tech-A-Thon brings to you its annual technical fest, Sanganak
+              Vimarsh.
+              It is intended to provide students with a pathway to showcase their ideas and innovations while competing
+              with other students through a series of interactive and innovative challenges.
+            </small>
+          </p>
         </div>
       </div>
     </section>
@@ -110,19 +196,20 @@
             <div class="col-lg-4 scrollFade">
               <div class="card event card-block mx-auto text-dark justify-content-center" data-bs-toggle="modal"
                 data-bs-target="#modal-1">
-                <i class="fa-regular fa-4x fa-lightbulb mb-3"></i> techTrivia
+                <i class="fa-regular fa-4x fa-lightbulb mb-3"></i> inQuizzITive
               </div>
             </div>
             <div class="col-lg-4 scrollFade">
               <div class="card event  card-block mx-auto text-dark justify-content-center" data-bs-toggle="modal"
                 data-bs-target="#modal-2">
-                <i class="fas fa-4x fa-rocket mb-3"></i> build@ARSD
+                <i class="fas fa-4x fa-rocket mb-3"></i> buildSV
               </div>
             </div>
             <div class="col-lg-4 scrollFade">
               <div class="card  event card-block mx-auto text-dark justify-content-center" data-bs-toggle="modal"
                 data-bs-target="#modal-3">
-                <i class="fas fa-4x fa-code mb-3"></i> codeOff@ARSD
+                <i class="fas fa-4x fa-code mb-3"></i> iostream'23
+
               </div>
             </div>
           </div>
@@ -136,41 +223,56 @@
             <div class="col-lg-4 scrollFade">
               <div class="card event card-block mx-auto text-dark justify-content-center" data-bs-toggle="modal"
                 data-bs-target="#modal-5">
-                <i class="fas fa-4x mb-3 fa-laugh"></i> memeWar
+                <i class="fas fa-4x mb-3 fa-laugh"></i> clash of memes
               </div>
             </div>
             <div class="col-lg-4 scrollFade">
               <div class="card event card-block mx-auto text-dark justify-content-center" data-bs-toggle="modal"
                 data-bs-target="#modal-6">
-                <i class="fas fa-4x mb-3 fa-earth-asia"></i> geoGuessr
+                <i class="fas fa-4x mb-3 fa-earth-asia"></i> clueminati
               </div>
             </div>
           </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-4 scrollFade">
+              <div class="card event card-block mx-auto text-dark justify-content-center" data-bs-toggle="modal"
+                data-bs-target="#modal-7">
+                <i class="fas fa-4x mb-3 fa-earth-asia"></i> valo-hella
+              </div>
+            </div>
+            <div class="col-lg-4 scrollFade">
+              <div class="card event card-block mx-auto text-dark justify-content-center" data-bs-toggle="modal"
+                data-bs-target="#modal-8">
+                <i class="fas fa-4x mb-3 fa-earth-asia"></i> shatranj
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
 
-    <!-- techTrivia MODAL -->
+    <!-- inQuizzITive MODAL -->
     <div class="modal fade " id="modal-1" tabindex="-1" aria-labelledby="quiz-model" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content text-dark">
           <div class="modal-header">
-            <h5 class="modal-title" id="quiz-model">techTrivia</h5>
+            <h5 class="modal-title" id="quiz-model">inQuizzITive</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <p>
-              Do you consider yourself to be tech savvy? Do you have a score to settle with a friend who considers
-              himself as a bigger tech genius than you? Then we have the perfect quiz for you at techTrivia!
-              Tech-a-thon, The Computer Science Society of ARSD College announces techTrivia as a part of it's
-              annual technical fest Sanganak Vimarsh 2023.
-              Register now and showcase your technical knowledge!
+              <i>“I have no particular talent, I am merely inquisitive”</i> – Albert Einstein<br>
+            </p>
+            <p>
+              In this battle of curious minds, participants will be in for a surprise, as they will answer trivialTech
+              questions with eyes on the grand prize!
             </p>
 
             <h6 class="fw-bold">Important Dates</h6>
-            <p>Qualifiers - March 20, 2023<br />
-              Finals - March 21, 2023</p>
+            <p>Qualifiers - March 21, 2023<br />
+              Finals - March 22, 2023</p>
 
             <h6 class="fw-bold">Platform</h6>
             <p>Qualifiers - BlockSurvey<br />
@@ -195,38 +297,41 @@
                 href="mailto:techathon+quiz@arsd.du.ac.in">techathon+quiz@arsd.du.ac.in</a></p>
           </div>
           <div class="modal-footer text-center">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScbqJLn1ApvVgSUMC3O3SoStEBJJnAnV2gzk9qX1gOQKJcjPw/viewform"
-              target="_blank">
-              <button type="button" class="btn btn-primary">Register Now</button>
-            </a>
+            <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLScbqJLn1ApvVgSUMC3O3SoStEBJJnAnV2gzk9qX1gOQKJcjPw/viewform"
+              target="_blank"> -->
+            <button type="button" class="btn btn-secondary" disabled>Registrations Comming Soon</button>
+            <!-- </a> -->
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Comp Prog 1.0 MODAL -->
+    <!-- buildSV MODAL -->
     <div class="modal fade " id="modal-2" tabindex="-1" aria-labelledby="quiz-model" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content text-dark">
           <div class="modal-header">
-            <h5 class="modal-title" id="quiz-model">build@ARSD</h5>
+            <h5 class="modal-title" id="quiz-model">buildSV</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <p>A 48 hour online hackathon organized by Techathon at Sanganak Vimarsh 2023. For all
-              the coding enthusiasts, this hacakthon puts forth a coding event
-              aimed at putting
-              technology to use for the progression and betterment of the society. The purpose of the event is to
-              bring together
-              coding enthusiasts and any and interested individuals to improve upon and build a project and come up
-              with an idea on
-              the theme “Tech for Good”, expanding on the positive impact of technology.</p>
+            <p>
+              <i>"Problem solving, lies in the heart of innovation"</i><br>
+            </p>
+            <p>
+              In this 48-hour long hackathon, participants will tackle real-world problems, with some ideas of their
+              own, and some of their teams.
+            </p>
+            <p>
+              They'll build upon the ideas, giving them shape and direction, all while making them presentable and
+              appealing. May the best project take the crown!
+            </p>
 
             <h6 class="fw-bold">Important Dates</h6>
-            <p>Development Begins - March 20, 2023 - 12:00 AM<br />
-              Submission Starts - March 21, 2023 - 11:30 AM<br />
-              Submission Deadline - March 21, 2023 - 11:45 PM<br />
-              Results Declared - March 22, 2023</p>
+            <p>Development Begins - March 21, 2023 - 12:00 AM<br />
+              Submission Starts - March 22, 2023 - 11:30 AM<br />
+              Submission Deadline - March 22, 2023 - 11:45 PM<br />
+              Results Declared - March 23, 2023</p>
 
             <h6 class="fw-bold">Details</h6>
             <p><a href="https://build-at-arsd-2022.devpost.com/" target="_blank">View build@ARSD 2023 on Devpost</a>
@@ -237,32 +342,34 @@
                 href="mailto:techathon+build@arsd.du.ac.in">techathon+build@arsd.du.ac.in</a></p>
           </div>
           <div class="modal-footer text-center">
-            <a href="https://build-at-arsd-2022.devpost.com/" target="_blank">
-              <button type="button" class="btn btn-primary">Register on Devpost</button>
-            </a>
+            <!-- <a href="https://build-at-arsd-2022.devpost.com/" target="_blank"> -->
+            <button type="button" class="btn btn-secondary" disabled>Registrations Comming Soon</button>
+            <!-- </a> -->
           </div>
         </div>
       </div>
     </div>
 
-    <!-- codeOff@ARSD 1.0 MODAL -->
+    <!-- iostream'23 MODAL -->
     <div class="modal fade " id="modal-3" tabindex="-1" aria-labelledby="quiz-model" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content text-dark">
           <div class="modal-header">
-            <h5 class="modal-title" id="quiz-model">codeOff@ARSD</h5>
+            <h5 class="modal-title" id="quiz-model">iostream'23</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <p>Do you think you have what it takes to be the best problem solver? Or do you want to simply test your
-              skills for
-              upcoming technical interviews? If yes, then codeOff is just the event for you! With participants from
-              across colleges,
-              many exciting challenges and fun prizes - this is an opportunity you don’t want to miss!</p>
+            <p>
+              The most promising event with three round table competitions among coding enthusiasts.
+            </p>
+            <p>
+              Participants will put their logical skills to the test by solving complex coding problems to advance to
+              the next rounds.
+            </p>
 
             <h6 class="fw-bold">Important Dates</h6>
-            <p>Qualifiers - March 20, 2023<br />
-              Finals - March 21, 2023</p>
+            <p>Qualifiers - March 22, 2023<br />
+              Finals - March 22, 2023</p>
 
             <h6 class="fw-bold">Prizes</h6>
             <p>
@@ -284,9 +391,9 @@
                 href="mailto:techathon+code@arsd.du.ac.in">techathon+code@arsd.du.ac.in</a></p>
           </div>
           <div class="modal-footer text-center">
-            <a href="https://forms.gle/EcFCVUoGzTX2hjZAA" target="_blank">
-              <button type="button" class="btn btn-primary">Register Now</button>
-            </a>
+            <!-- <a href="https://forms.gle/EcFCVUoGzTX2hjZAA" target="_blank"> -->
+            <button type="button" class="btn btn-secondary" disabled>Registrations Comming Soon</button>
+            <!-- </a> -->
           </div>
         </div>
       </div>
@@ -336,20 +443,24 @@
       </div>
     </div>
 
-    <!-- memeWars MODAL -->
+    <!--clash of memes MODAL -->
     <div class="modal fade " id="modal-5" tabindex="-1" aria-labelledby="quiz-model" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content text-dark">
           <div class="modal-header">
-            <h5 class="modal-title" id="quiz-model">memeWar</h5>
+            <h5 class="modal-title" id="quiz-model">clash of memes</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <p>If you use Facebook, or Instagram, have a Wi-Fi connection, or watch television, you’ve probably
-              encountered internet
-              memes. So, if you have the humor to be a memer, take part in the funniest war ever, MEME WAR, where you
-              will be able to
-              flaunt your memes! Take part in this battle and showcase your talent with your unique and fun memes.</p>
+            <p>
+              <i>"Me after failing all my unit tests:<br>
+                Am I testing the program, or is it testing me? ಠ.ಠ"</i><br>
+            </p>
+            <p>
+              In this memeified event, humor and sarcasm will prevail as participants will be making memes depicting
+              their coding struggles and inner emotions. The funniest meme-maker will emerge victorious.
+
+            </p>
 
             <h6 class="fw-bold">Important Dates</h6>
             <p>Submission Starts: March 20, 2023 - 08:00 AM<br />
@@ -365,8 +476,8 @@
             </p>
 
             <h6 class="fw-bold">Rules</h6>
-            <p><a
-                href="https://docs.google.com/document/d/1RBH6zClx5Wq_tugzF1UzgN7LNJo70Gi06E-Oc7mhnWo/edit#heading=h.x85bomza6zk9"
+            <p>
+              <a href="https://docs.google.com/document/d/1RBH6zClx5Wq_tugzF1UzgN7LNJo70Gi06E-Oc7mhnWo/edit#heading=h.x85bomza6zk9"
                 target="_blank">Click Here</a>
             </p>
 
@@ -376,37 +487,39 @@
                 href="mailto:techathon+fun@arsd.du.ac.in">techathon+fun@arsd.du.ac.in</a></p>
           </div>
           <div class="modal-footer text-center">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSegUwNosV2HiHoPKftsmNY-mHZXqGwSZT-kEQgE-NOo6SmboQ/viewform"
-              target="_blank">
-              <button type="button" class="btn btn-primary">Register Now</button>
-            </a>
+            <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLSegUwNosV2HiHoPKftsmNY-mHZXqGwSZT-kEQgE-NOo6SmboQ/viewform"
+              target="_blank"> -->
+            <button type="button" class="btn btn-secondary" disabled>Registrations Comming Soon</button>
+            <!-- </a> -->
           </div>
         </div>
       </div>
     </div>
 
-    <!-- geoGuesser MODAL -->
+    <!-- clueminati MODAL -->
     <div class="modal fade " id="modal-6" tabindex="-1" aria-labelledby="quiz-model" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content text-dark">
           <div class="modal-header">
-            <h5 class="modal-title" id="quiz-model">geoGuessr</h5>
+            <h5 class="modal-title" id="quiz-model">clueminati</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <p>
-              Amidst the pandemic, you might not have gotten a chance to explore Delhi University and the campus. But
-              do you still
-              think you can guess famous locations on the campus like Hudson Lane, Tom Uncle's Maggi Point, and
-              Sudama's tea shop? So,
-              if you are up for the challenge, we have the best game for you. Tech-a-Thon, the Computer Science
-              Society of Atma Ram
-              Sanatan Dharma College, University of Delhi, is organizing geoGuessr (a location recognition game based
-              around Delhi University).
+              <i>“Picking up on cues is a natural human tendency”</i>
+            </p>
+            <p>
+              In this event, participants will have to hunt for clues, solving them alongside; as they compete with
+              their peers to find the treasure hidden in plain sight!
+            </p>
+            <p>
+              Their practical solutions will then be tested based on creativity and effort. At the end, the best
+              projects will be filtered out and given exclusive rewards!
+
             </p>
 
             <h6 class="fw-bold">Date</h6>
-            <p>March 21, 2023</p>
+            <p>March 22, 2023</p>
 
 
             <h6 class="fw-bold">Prizes</h6>
@@ -426,14 +539,106 @@
                 href="mailto:techathon+fun@arsd.du.ac.in">techathon+fun@arsd.du.ac.in</a></p>
           </div>
           <div class="modal-footer text-center">
-            <a href="https://docs.google.com/forms/d/12xexoOgGi-3-cBBqce2shxsm8GEUtkvqeq_UtzHJwwc/edit" target="_blank">
-              <button type="button" class="btn btn-primary">Register Now</button>
-            </a>
+            <!-- <a href="https://docs.google.com/forms/d/12xexoOgGi-3-cBBqce2shxsm8GEUtkvqeq_UtzHJwwc/edit" target="_blank"> -->
+            <button type="button" class="btn btn-secondary" disabled>Registrations Comming Soon</button>
+            <!-- </a> -->
           </div>
         </div>
       </div>
     </div>
 
+    <!-- valo-hella MODAL -->
+    <div class="modal fade " id="modal-7" tabindex="-1" aria-labelledby="quiz-model" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="quiz-model">valo-hella</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <i>“Every fight ends up being a matchup of skill”</i>
+            </p>
+            <p>
+              Get ready for an action-packed showdown as 16 teams face off in a thrilling Valorant competition! With
+              intense gameplay and nail-biting moments, only one team will rise to the top and claim victory. So don't
+              miss out on the excitement and the chance to see the best Valorant players in action!
+            </p>
+
+            <h6 class="fw-bold">Date</h6>
+            <p>March 22, 2023</p>
+
+
+            <h6 class="fw-bold">Prizes</h6>
+            <p>
+              Winners (2): Cash Prize of ₹500
+            </p>
+
+            <h6 class="fw-bold">Rules</h6>
+            <p><a
+                href="https://docs.google.com/document/d/1RBH6zClx5Wq_tugzF1UzgN7LNJo70Gi06E-Oc7mhnWo/edit#heading=h.flatikpoiqtd"
+                target="_blank">Click Here</a>
+            </p>
+
+            <h6 class="fw-bold">Contact</h6>
+            <p>Gaurav <a href="tel:+918528668903">+918528668903</a><br />Kushan <a
+                href="tel:+919521600838">+919521600838</a><br /><a
+                href="mailto:techathon+fun@arsd.du.ac.in">techathon+fun@arsd.du.ac.in</a></p>
+          </div>
+          <div class="modal-footer text-center">
+            <!-- <a href="https://docs.google.com/forms/d/12xexoOgGi-3-cBBqce2shxsm8GEUtkvqeq_UtzHJwwc/edit" target="_blank"> -->
+            <button type="button" class="btn btn-secondary" disabled>Registrations Comming Soon</button>
+            <!-- </a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- shatranj MODAL -->
+    <div class="modal fade " id="modal-8" tabindex="-1" aria-labelledby="quiz-model" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="quiz-model">shatranj</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <i>"Dead pawns tell no tales", and neither will we.</i>
+            </p>
+            <p>
+              In this game of chess, participants will compete with the whole infantry under their will.
+              Can they survive the board relying solely on their wits? Let's find out!
+            </p>
+
+            <h6 class="fw-bold">Date</h6>
+            <p>March 22, 2023</p>
+
+
+            <h6 class="fw-bold">Prizes</h6>
+            <p>
+              Winners (2): Cash Prize of ₹500
+            </p>
+
+            <h6 class="fw-bold">Rules</h6>
+            <p><a
+                href="https://docs.google.com/document/d/1RBH6zClx5Wq_tugzF1UzgN7LNJo70Gi06E-Oc7mhnWo/edit#heading=h.flatikpoiqtd"
+                target="_blank">Click Here</a>
+            </p>
+
+            <h6 class="fw-bold">Contact</h6>
+            <p>Gaurav <a href="tel:+918528668903">+918528668903</a><br />Kushan <a
+                href="tel:+919521600838">+919521600838</a><br /><a
+                href="mailto:techathon+fun@arsd.du.ac.in">techathon+fun@arsd.du.ac.in</a></p>
+          </div>
+          <div class="modal-footer text-center">
+            <!-- <a href="https://docs.google.com/forms/d/12xexoOgGi-3-cBBqce2shxsm8GEUtkvqeq_UtzHJwwc/edit" target="_blank"> -->
+            <button type="button" class="btn btn-secondary" disabled>Registrations Comming Soon</button>
+            <!-- </a> -->
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section id="prizes">
       <div class="px-4 py-5 my-3 text-center">
@@ -763,12 +968,12 @@
     <div class="text-center last-line py-4">
       <small>
         Made with love by Tech-a-thon ARSD
+      </small>
     </div>
-    </small>
   </footer>
 
   <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
-      <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
   </button>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"

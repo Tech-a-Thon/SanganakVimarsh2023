@@ -49,6 +49,42 @@ document.addEventListener('DOMContentLoaded', function () {
   scrollFade();
 });
 
+// Fade in & Fade out for home
+var fadeElementsHome = document.getElementsByClassName('scrollFadeHome');
+
+function scrollFadeHome() {
+  var viewportBottom = window.scrollY + window.innerHeight;
+
+  for (var index = 0; index < fadeElementsHome.length; index++) {
+    var element = fadeElementsHome[index];
+    var rect = element.getBoundingClientRect();
+
+    var elementFourth = rect.height / 6;
+    var fadeInPoint = window.innerHeight - elementFourth;
+    var fadeOutPoint = -(rect.height / 1.5);
+
+    if (rect.top <= fadeInPoint) {
+      element.classList.add('scrollFade--visible');
+      element.classList.add('scrollFade--animate');
+      element.classList.remove('scrollFade--hidden');
+    } else {
+      element.classList.remove('scrollFade--visible');
+      element.classList.add('scrollFade--hidden');
+    }
+
+    if (rect.top <= fadeOutPoint) {
+      element.classList.remove('scrollFade--visible');
+      element.classList.add('scrollFade--hidden');
+    }
+  }
+}
+
+document.addEventListener('scroll', scrollFadeHome);
+window.addEventListener('resize', scrollFadeHome);
+document.addEventListener('DOMContentLoaded', function () {
+  scrollFadeHome();
+});
+
 // only fade in
 var fadeInElements = document.getElementsByClassName('scrollFadeIn');
 
@@ -80,6 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// back-to-top button
 const btnScrollToTop = document.querySelector('#btn-back-to-top');
 
 btnScrollToTop.addEventListener("click", function () {
