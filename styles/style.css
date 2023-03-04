@@ -92,15 +92,6 @@ html {
   padding-top: 3em;
 }
 
-#schedule {
-  background: url("../imgs/event-laptop.jpeg");
-  background-repeat: no-repeat;
-  background-size:contain;
-  height: 90vh;
-  /* margin: auto 0; */
-  padding-top: 3em;
-}
-
 #event-title {
   display: none;
   font-family: "Eczar", serif;
@@ -148,6 +139,13 @@ section {
 }
 
 section#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh !important;
+}
+
+section#schedule {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -304,6 +302,9 @@ h1 {
 
 @media screen and (max-width: 500px) {
   #btn-back-to-top {
+    display: none;
+  }
+  .schedule-heading{
     display: none;
   }
 }
