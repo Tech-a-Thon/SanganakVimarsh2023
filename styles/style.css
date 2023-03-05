@@ -304,7 +304,16 @@ h1 {
   #btn-back-to-top {
     display: none;
   }
-  .schedule-heading{
+}
+
+@media screen and (max-width: 800px) {
+  #scheduleLaptop{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #schedulePhone{
     display: none;
   }
 }
