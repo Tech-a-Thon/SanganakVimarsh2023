@@ -186,8 +186,8 @@ section#schedule {
   }
 }
 
-.nav-item:hover{
-  background-color: red;
+.nav-link:hover{
+  background-color: rgba(255, 0, 0, 0.582);
 }
 
 @media (max-width: 991px) {
