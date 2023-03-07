@@ -39,10 +39,6 @@ html {
   background: transparent !important;
 }
 
-.nav-link {
-  margin-right: 1em;
-}
-
 .navbar-nav {
   margin-right: auto;
 }
@@ -190,24 +186,36 @@ section#schedule {
   }
 }
 
+.nav-item:hover{
+  background-color: red;
+}
+
 @media (max-width: 991px) {
   .nav-link {
     text-align: center;
-    /* background-color: #222 !important; */
-    /* background: linear-gradient(
-      109.6deg,
-      rgb(14, 11, 56) 11.2%,
-      rgb(239, 37, 37) 91.1%
-    ); */
     background: rgb(16, 12, 68);
     border-radius: 5px;
+    margin-right: 4px;
+    margin-left: 4px;
   }
+
+  .nav-item {
+    padding: 2px;
+  }
+
+  .navbar-collapse{
+    background-color: #ffffff91;
+    padding-bottom: 0;
+  }
+
   #home {
     padding-top: 0;
   }
+
   .lead {
     font-size: 1rem !important;
   }
+  
   #about,
   #aboutEvent,
   #events,
