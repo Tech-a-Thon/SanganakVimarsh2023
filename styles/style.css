@@ -186,10 +186,6 @@ section#schedule {
   }
 }
 
-.nav-link:hover{
-  background-color: rgba(255, 0, 0, 0.582);
-}
-
 @media (max-width: 991px) {
   .nav-link {
     text-align: center;
@@ -206,6 +202,10 @@ section#schedule {
   .navbar-collapse{
     background-color: #ffffff91;
     padding-bottom: 0;
+  }
+
+  .nav-link:hover{
+    background-color: rgba(255, 0, 0, 0.582);
   }
 
   #home {
