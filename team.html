@@ -32,12 +32,21 @@
           rgb(146, 20, 20) 91.1%);
     }
 
+    .main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      place-items: center;
+    }
+
+    /* .main>div {
+      border: 1px solid black;
+    } */
+
     .team-member {
       text-align: center;
       padding: 20px;
       margin-right: 20px;
       margin-bottom: 20px;
-      /* border: #000 5px solid; */
     }
 
     .team-member img {
@@ -84,11 +93,7 @@
     }
 
     @media (min-width: 768px) {
-      .team-member {
-        flex-basis: calc(33.33% - 40px);
-        margin-right: 20px;
-        margin-bottom: 20px;
-      }
+
 
       .team-member:last-child {
         margin-right: 0;
@@ -96,8 +101,12 @@
     }
 
     @media (max-width:767px) {
-      .team-member {
-        margin-bottom: 20px;
+      .team-member img {
+        height: 300px;
+        width: 300px;
+      }
+      .team-member{
+        margin-inline: 25px;
       }
     }
   </style>
@@ -110,10 +119,10 @@
 
     <h1 class="text-center my-5 scrollFade">Meet Our Team</h1>
 
-    <div class="row justify-content-center py-3">
+    <div class="main py-3">
 
       <!-- Team Member #1 -->
-      <div class="text-center col-lg-4 col-lg-6 team-member scrollFade">
+      <div class="text-center team-member scrollFade">
 
         <img src="./Picture/ankit.jpg" alt="">
 
@@ -130,7 +139,7 @@
       </div>
 
       <!-- Team Member #2 -->
-      <div class="col-lg-4 col-lg-6 team-member scrollFade">
+      <div class=" team-member scrollFade">
 
         <img src="./Picture/satyam.jpg" alt="">
 
@@ -147,7 +156,7 @@
       </div>
 
       <!-- Team Member #3 -->
-      <div class="col-lg-4 col-lg-6 team-member scrollFade">
+      <div class="team-member scrollFade">
 
         <img src="./Picture/mansawini.jpeg" alt="">
 
@@ -164,7 +173,7 @@
       </div>
 
       <!-- Team Member #4 -->
-      <div class="col-lg-4 col-lg-6 team-member scrollFade">
+      <div class=" team-member scrollFade">
 
         <img src="./Picture/deepshikha.jpg" alt="">
 
@@ -181,7 +190,7 @@
       </div>
 
       <!-- Team Member #5 -->
-      <div class="col-lg-4 col-lg-6 team-member scrollFade">
+      <div class="team-member scrollFade">
 
         <img src="./Picture/chetan.JPG" alt="">
 
@@ -198,7 +207,7 @@
       </div>
 
       <!-- Team Member #13 -->
-      <div class="col-lg-4 col-lg-6 team-member scrollFade">
+      <div class="team-member scrollFade">
 
         <img src="./Picture/tejas.png" alt="">
 
@@ -215,7 +224,7 @@
       </div>
 
       <!-- Team Member #14 -->
-      <div class="col-lg-4 col-lg-6 team-member scrollFade">
+      <div class="team-member scrollFade">
 
         <img src="./Picture/khushal.jpeg" alt="">
 
@@ -232,7 +241,7 @@
       </div>
 
       <!-- Team Member #8 -->
-      <div class="col-lg-4 col-lg-6 team-member scrollFade">
+      <div class="team-member scrollFade">
 
         <img src="./Picture/harsh.jpg" alt="">
 
@@ -249,7 +258,7 @@
       </div>
 
       <!-- Team Member #6 -->
-      <div class="col-lg-4 col-lg-6 team-member scrollFade">
+      <div class="team-member scrollFade">
 
         <img src="./Picture/pranav.jpg" alt="">
 
@@ -266,7 +275,7 @@
       </div>
 
       <!-- Team Member #7 -->
-      <div class="col-lg-4 col-lg-6 team-member scrollFade">
+      <div class="team-member scrollFade">
 
         <img src="./Picture/ddp.jpg" alt="">
 
@@ -283,7 +292,7 @@
       </div>
 
       <!-- Team Member #9 -->
-      <div class="col-lg-4 col-lg-6 team-member scrollFade">
+      <div class="team-member scrollFade">
 
         <img src="./Picture/ashita.jpg" alt="">
 
@@ -300,7 +309,7 @@
       </div>
 
       <!-- Team Member #10 -->
-      <div class="col-lg-4 col-lg-6 team-member scrollFade">
+      <div class="team-member scrollFade">
 
         <img src="./Picture/aditi gairola.jpg" alt="">
 
@@ -317,7 +326,7 @@
       </div>
 
       <!-- Team Member #11 -->
-      <div class="col-lg-4 col-lg-6 team-member scrollFade">
+      <div class="team-member scrollFade">
 
         <img src="./Picture/gitanjali.jpeg" alt="">
 
@@ -334,7 +343,7 @@
       </div>
 
       <!-- Team Member #12 -->
-      <div class="col-lg-4 col-lg-6 team-member scrollFade">
+      <div class="team-member scrollFade">
 
         <img src="./Picture/aditi sharma1.jpg" alt="">
 
@@ -353,7 +362,7 @@
 
 
       <!-- Team Member #15 -->
-      <div class="col-lg-4 col-lg-6 team-member scrollFade">
+      <div class="team-member scrollFade">
 
         <img src="./Picture/chandni.jpg" alt="">
 
@@ -378,10 +387,10 @@
   </footer>
 
   <!-- Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
 
